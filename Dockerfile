@@ -2,5 +2,11 @@ FROM andrewosh/binder-base
 
 MAINTAINER Simon Biggs <mail@simonbiggs.net>
 
-RUN conda install shapely
-RUN pip install descartes pydicom plotly
+USER root
+
+RUN apt-get update
+RUN apt-get build-dep -y python-shapely
+
+RUN pip3 install shapely descartes pydicom plotly
+
+USER main
