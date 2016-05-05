@@ -2,6 +2,8 @@
 
 This is a simplification of the code base found over at https://github.com/SimonBiggs/electronfactors.
 
+To view a live demo of this code in action head on over to http://simonbiggs.net/electrondemo.
+
 To install this bundle do the following:
 
  * Download and install the relevant Anaconda Python 3.5 install from [continuum.io/downloads](https://www.continuum.io/downloads).
