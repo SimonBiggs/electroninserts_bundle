@@ -1,55 +1,55 @@
 %YAML 1.1
 ---
-Machine: Elekta Agility Linac
+Machine: Elekta Synergy Linac with Agility MLCs
 
 R50 (cm):
-    6 MeV: tbw  # tbw stands for to be written
-    9 MeV: tbw
-    12 MeV: tbw
-    15 MeV: tbw
-    18 MeV: tbw
+    6 MeV: 2.45
+    9 MeV: 3.47
+    12 MeV: 4.72
+    15 MeV: 5.8
+    18 MeV: 7.2
 
 Applicator factors:
     6 MeV:
-        6x6 cm: tbw
+        6x6 cm: 0.871
         10x10 cm: 1.000
-        14x14 cm: tbw
-        20x20 cm: tbw
-        25x25 cm: tbw
+        14x14 cm: 1.029
+        20x20 cm: 1.022
+        25x25 cm: 1.026
     9 MeV:
-        6x6 cm: tbw
+        6x6 cm: 0.919
         10x10 cm: 1.000
-        14x14 cm: tbw
-        20x20 cm: tbw
-        25x25 cm: tbw
+        14x14 cm: 0.981
+        20x20 cm: 0.977
+        25x25 cm: 0.971
     12 MeV:
-        6x6 cm: tbw
+        6x6 cm: 0.971
         10x10 cm: 1.000
-        14x14 cm: tbw
-        20x20 cm: tbw
-        25x25 cm: tbw
+        14x14 cm: 0.990
+        20x20 cm: 0.985
+        25x25 cm: 0.983
     15 MeV:
-        6x6 cm: tbw
+        6x6 cm: 0.980
         10x10 cm: 1.000
-        14x14 cm: tbw
-        20x20 cm: tbw
-        25x25 cm: tbw
+        14x14 cm: 0.982
+        20x20 cm: 0.988
+        25x25 cm: 0.987
     18 MeV:
-        6x6 cm: tbw
+        6x6 cm: 1.011
         10x10 cm: 1.000
-        14x14 cm: tbw
-        20x20 cm: tbw
-        25x25 cm: tbw
+        14x14 cm: 0.983
+        20x20 cm: 0.979
+        25x25 cm: 0.967
 
 SSD factors:
     100 SSD: 1.000
 
 Applicator sizes at isocentre:
-    6x6 cm: tbw
-    10x10 cm: tbw
-    14x14 cm: tbw
-    20x20 cm: tbw
-    25x25 cm: tbw
+    6x6 cm: 6.3x6.3 cm
+    10x10 cm: 10.5x10.5 cm
+    14x14 cm: 14.7x14.7 cm
+    20x20 cm: 21.1x21.1 cm
+    25x25 cm: 26.3x26.3 cm
 
 Definition of modelled factor: >
     The factor given here is the insert factor defined as the portion of the 
