@@ -881,8 +881,8 @@ def create_report_from_dictionary(input_dictionary):
     factor_data = np.array([input_dictionary[key]['factor'] for key in label])
     ratio_perim_area_data = convert2_ratio_perim_area(width_data, length_data)
 
-    bkh.plotting.show(interactive(
-        width_data, length_data, ratio_perim_area_data, factor_data, label))
+    return interactive(
+        width_data, length_data, ratio_perim_area_data, factor_data, label)
 
 
 def create_report_from_pandas(input_dataframe):
@@ -891,6 +891,6 @@ def create_report_from_pandas(input_dataframe):
     length_data = np.array(input_dataframe['length']).astype(float)
     factor_data = np.array(input_dataframe['factor']).astype(float)
     ratio_perim_area_data = convert2_ratio_perim_area(width_data, length_data)
-
-    bkh.plotting.show(interactive(
-        width_data, length_data, ratio_perim_area_data, factor_data, label))
+    
+    return interactive(
+        width_data, length_data, ratio_perim_area_data, factor_data, label)

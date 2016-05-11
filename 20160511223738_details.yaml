@@ -1,0 +1,69 @@
+%YAML 1.1
+---
+Machine: Elekta Agility Linac
+
+R50 (cm):
+    6 MeV: tbw  # tbw stands for to be written
+    9 MeV: tbw
+    12 MeV: tbw
+    15 MeV: tbw
+    18 MeV: tbw
+
+Applicator factors:
+    6 MeV:
+        6x6 cm: tbw
+        10x10 cm: 1.000
+        14x14 cm: tbw
+        20x20 cm: tbw
+        25x25 cm: tbw
+    9 MeV:
+        6x6 cm: tbw
+        10x10 cm: 1.000
+        14x14 cm: tbw
+        20x20 cm: tbw
+        25x25 cm: tbw
+    12 MeV:
+        6x6 cm: tbw
+        10x10 cm: 1.000
+        14x14 cm: tbw
+        20x20 cm: tbw
+        25x25 cm: tbw
+    15 MeV:
+        6x6 cm: tbw
+        10x10 cm: 1.000
+        14x14 cm: tbw
+        20x20 cm: tbw
+        25x25 cm: tbw
+    18 MeV:
+        6x6 cm: tbw
+        10x10 cm: 1.000
+        14x14 cm: tbw
+        20x20 cm: tbw
+        25x25 cm: tbw
+
+SSD factors:
+    100 SSD: 1.000
+
+Applicator sizes at isocentre:
+    6x6 cm: tbw
+    10x10 cm: tbw
+    14x14 cm: tbw
+    20x20 cm: tbw
+    25x25 cm: tbw
+
+Definition of modelled factor: >
+    The factor given here is the insert factor defined as the portion of the 
+    electron output factor that is dependent on the insert alone. The electron 
+    output factor is defined as per AAPM TG 25  as the ratio of dose per 
+    monitor unit at dmax.
+
+Measurement details: >
+    Insert factors were measured in RW3 with an Advanced Markus on an Elekta 
+    Agility linac. When the depth of maximum dose was shifted from the reference 
+    depth this depth was searched for to a 1 mm resolution. All depth differences 
+    took into account stopping power ratio corrections as per the protocol in 
+    IAEA TRS 398.
+
+Insert shielding material: Cerrobend
+
+Software license of accompanying data: AGPLv3+
