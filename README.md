@@ -4,7 +4,7 @@ This is a simplification of the code base found over at https://github.com/Simon
 
 To view a live demo of this code in action head on over to http://simonbiggs.net/electrondemo.
 
-To install this bundle do the following:
+To install this bundle on Windows do the following:
 
  * Download and install the relevant Anaconda Python 3.5 install from [continuum.io/downloads](https://www.continuum.io/downloads).
  * Download the zip file containing the bundle http://simonbiggs.net/electronbundle.
