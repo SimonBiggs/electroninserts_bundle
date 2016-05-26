@@ -370,6 +370,13 @@ def fitted_shapely_ellipse(x, y, width, length):
 
     return ellipse
 
+    
+def shapely_ellipse(x, y, width, length, rotation):
+    circle = shp.geometry.Point(x, y).buffer(1)
+    stretched = shp.affinity.scale(circle, xfact=width/2, yfact=length/2)
+    
+    return shp.affinity.rotate(stretched, rotation) 
+
 
 def display_shapely(ax, shape, alpha=1):
     patch = des.PolygonPatch(
