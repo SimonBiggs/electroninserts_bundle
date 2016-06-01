@@ -370,13 +370,6 @@ def fitted_shapely_ellipse(x, y, width, length):
 
     return ellipse
 
-    
-def shapely_ellipse(x, y, width, length, rotation):
-    circle = shp.geometry.Point(x, y).buffer(1)
-    stretched = shp.affinity.scale(circle, xfact=width/2, yfact=length/2)
-    
-    return shp.affinity.rotate(stretched, rotation) 
-
 
 def display_shapely(ax, shape, alpha=1):
     patch = des.PolygonPatch(
@@ -615,7 +608,7 @@ def transformed_pcolor(width_data, length_data, factor_data):
 
 
 def bokeh_scatter(x, y, hover_labels, hover_values):
-    fig = bkh.figure(
+    fig = bkh.plotting.figure(
         tools=default_tools,
         plot_height=400, plot_width=600)
 
@@ -830,12 +823,6 @@ def interactive(width_data, length_data, ratio_perim_area_data, factor_data,
     render_vis = transformed.select(name='trans_visible')
     render_vis.nonselection_glyph = unselect_rectangle
 
-    tooltips = [
-        ("Width", "@hover_width"),
-        ("Length", "@hover_length"),
-        ("P/A", "@hover_ratio_perim_area"),
-        ("Factor", "@hover_factor"),
-    ]
     transformed.add_tools(bkh.models.HoverTool(
         tooltips=tooltips,
         renderers=render_vis))
