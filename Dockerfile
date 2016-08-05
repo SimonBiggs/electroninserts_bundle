@@ -2,4 +2,4 @@ FROM andrewosh/binder-base
 
 MAINTAINER Simon Biggs <mail@simonbiggs.net>
 
-RUN /bin/bash -c "source activate python3 && conda install shapely && pip install pyyaml dropbox descartes pydicom plotly && ipython -c 'import matplotlib.pyplot'"
+RUN /bin/bash -c "conda create --name electroninserts --file explicit-spec-file.txt && source activate electroninserts && ipython -c 'import matplotlib.pyplot'"
